@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+
+}
+
+.card{
+    background: #574949b0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.description{
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+.tite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    border: 1px solid black;
+    background: white;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading....";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+button:hover{
+    background: #7265655b;
+}
+
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #0a0a0a2b;
+    color: white;
+    font-size: 105%;
+    width: 100%;
+    
+    
+}
+
+::placeholder{
+    color: white;
+    
+}
